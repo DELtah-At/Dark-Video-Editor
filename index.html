@@ -1,89 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Editor de Vídeos</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio de Edição de Vídeos</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="container">
-                <h1 class="logo">Editor de Vídeos</h1>
-                <ul class="nav-links">
-                    <li><a href="#about">Sobre Mim</a></li>
-                    <li><a href="#portfolio">Portfólio</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+  <header>
+    <div class="container">
+      <h1>João Silva</h1>
+      <p>Editor de Vídeos Profissional</p>
+    </div>
+  </header>
 
-    <main>
-        <section id="hero">
-            <div class="hero-content">
-                <h2>Transforme Suas Ideias em Vídeos de Impacto</h2>
-                <p>Profissional em edição de vídeos com foco em criatividade e qualidade.</p>
-                <a href="#portfolio" class="btn">Veja Meu Trabalho</a>
-            </div>
-        </section>
+  <nav>
+    <ul>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#portifolio">Portfólio</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
 
-        <section id="about">
-            <div class="container">
-                <h2>Sobre Mim</h2>
-                <p>Olá! Sou um editor de vídeos com anos de experiência ajudando clientes a contar suas histórias de forma visual e envolvente. Trabalho com softwares como Adobe Premiere, After Effects, e Final Cut Pro para garantir a melhor qualidade nos projetos.</p>
-            </div>
-        </section>
+  <section id="sobre" class="container">
+    <h2>Sobre Mim</h2>
+    <p>Sou um editor de vídeos apaixonado por contar histórias através de imagens e som. Com experiência em projetos corporativos, videoclipes e conteúdo digital, estou pronto para dar vida às suas ideias.</p>
+  </section>
 
-        <section id="portfolio">
-            <div class="container">
-                <h2>Portfólio</h2>
-                <div class="grid">
-                    <div class="card">
-                        <img src="video1.jpg" alt="Projeto 1">
-                        <h3>Projeto 1</h3>
-                        <p>Edição criativa para um comercial de TV.</p>
-                    </div>
-                    <div class="card">
-                        <img src="video2.jpg" alt="Projeto 2">
-                        <h3>Projeto 2</h3>
-                        <p>Vídeo promocional para redes sociais.</p>
-                    </div>
-                    <div class="card">
-                        <img src="video3.jpg" alt="Projeto 3">
-                        <h3>Projeto 3</h3>
-                        <p>Documentário sobre causas ambientais.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <section id="servicos" class="container">
+    <h2>Serviços</h2>
+    <ul>
+      <li>Edição de vídeos corporativos</li>
+      <li>Produção de videoclipes</li>
+      <li>Criação de conteúdo para redes sociais</li>
+      <li>Retoque e correção de cores</li>
+    </ul>
+  </section>
 
-        <section id="contact">
-            <div class="container">
-                <h2>Contato</h2>
-                <form id="contact-form">
-                    <label for="name">Nome</label>
-                    <input type="text" id="name" name="name" required>
+  <section id="portifolio" class="container">
+    <h2>Portfólio</h2>
+    <div class="gallery">
+      <div class="item"><img src="video1.jpg" alt="Projeto 1"></div>
+      <div class="item"><img src="video2.jpg" alt="Projeto 2"></div>
+      <div class="item"><img src="video3.jpg" alt="Projeto 3"></div>
+    </div>
+  </section>
 
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
+  <section id="contato" class="container">
+    <h2>Contato</h2>
+    <p>Entre em contato para discutir o seu projeto.</p>
+    <form action="#">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Mensagem:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
 
-                    <label for="message">Mensagem</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-
-                    <button type="submit" class="btn">Enviar</button>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Editor de Vídeos. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+  <footer>
+    <p>&copy; 2024 João Silva - Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
