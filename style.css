@@ -1,0 +1,154 @@
+/* Resetando margens e padding padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo */
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    line-height: 1.6;
+    padding: 20px;
+    background: radial-gradient(circle, #000 15%, #333 30%, #000 60%, #333 100%);
+    /* Criando o efeito de "buraco negro" no fundo */
+    background-size: 300% 300%;
+    animation: swirl 10s infinite linear;
+}
+
+/* Animação para dar movimento ao fundo do buraco negro */
+@keyframes swirl {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semitransparente */
+    color: #fff;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Cartões de edição */
+.editions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.edition-card {
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo semitransparente */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.edition-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.edition-card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Exemplo de vídeos */
+.examples {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem 0;
+}
+
+.examples h2 {
+    font-size: 2rem;
+    color: #cc99ff;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Categorias de Vídeos */
+.category {
+    margin-bottom: 2rem;
+}
+
+.category h3 {
+    font-size: 1.8rem;
+    color: #cc99ff;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.examples-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* Estilo dos vídeos */
+.example-video {
+    background-color: #000;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    margin: 10px 0;
+    width: 100%;
+    max-width: 560px; /* Ajustando o tamanho */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.example-video iframe {
+    width: 100%;
+    height: 315px; /* Tamanho padrão para vídeos em formato widescreen */
+    border: none;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .example-video {
+        max-width: 48%; /* Ajusta para vídeos menores ao lado */
+    }
+}
+
+@media (max-width: 480px) {
+    .example-video {
+        max-width: 100%; /* Em telas menores, vídeos ocupam toda a largura */
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    margin-top: 30px;
+    border-radius: 8px;
+}
