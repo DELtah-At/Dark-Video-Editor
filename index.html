@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafael - Editor de Vídeo Profissional</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <i class="fas fa-video loading-icon"></i>
+            <p>Carregando Portfólio...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <i class="fas fa-video"></i>
+            <span>Rafael Editor</span>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#home" data-section="home">Início</a></li>
+            <li><a href="#about" data-section="about">Sobre</a></li>
+            <li><a href="#skills" data-section="skills">Habilidades</a></li>
+            <li><a href="#portfolio" data-section="portfolio">Portfólio</a></li>
+            <li><a href="#contact" data-section="contact">Contato</a></li>
+        </ul>
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="typing-text">Olá, eu sou o </span>
+                    <span class="highlight">Rafael</span>
+                </h1>
+                <h2 class="hero-subtitle">Editor de Vídeo Profissional</h2>
+                <p class="hero-description">
+                    Transformo ideias em vídeos incríveis. Especialista em edição criativa, 
+                    motion graphics e storytelling visual.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-eye"></i>
+                        <span id="total-views" class="stat-number">Carregando...</span>
+                        <span class="stat-label">Visualizações</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-play-circle"></i>
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Projetos</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-users"></i>
+                        <span class="stat-number">30+</span>
+                        <span class="stat-label">Clientes</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">
+                        <i class="fas fa-play"></i>
+                        Ver Portfólio
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-envelope"></i>
+                        Entrar em Contato
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="video-preview">
+                    <div class="video-frame">
+                        <i class="fas fa-play video-play-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sobre Mim</h2>
+                <p class="section-subtitle">Conheça minha jornada e paixão pela edição de vídeos</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Minha História</h3>
+                    <p>
+                        Sou um editor de vídeo apaixonado por contar histórias através de imagens em movimento. 
+                        Com anos de experiência, desenvolvi um olhar único para criar conteúdos que engajam e emocionam.
+                    </p>
+                    <p>
+                        Cada projeto é uma nova oportunidade de explorar técnicas criativas e entregar resultados 
+                        que superam expectativas. Trabalho com diversos estilos, desde vídeos corporativos até 
+                        conteúdos para redes sociais.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-trophy"></i>
+                            <span>Qualidade Premium</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Entregas no Prazo</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-heart"></i>
+                            <span>Paixão pelo que Faço</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-user-edit"></i>
+                        <p>Sua foto aqui</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Habilidades & Ferramentas</h2>
+                <p class="section-subtitle">Tecnologias e softwares que domino</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-video"></i> Edição de Vídeo</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-adobe"></i>
+                            </div>
+                            <span>Adobe Premiere Pro</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-adobe"></i>
+                            </div>
+                            <span>Adobe After Effects</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-palette"></i> Design & Criação</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-adobe"></i>
+                            </div>
+                            <span>Adobe Photoshop</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="88"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-magic"></i> Especialidades</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <span>Color Grading</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <span>Motion Graphics</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="92"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-cut"></i>
+                            </div>
+                            <span>Edição Criativa</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="95"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Meu Portfólio</h2>
+                <p class="section-subtitle">Projetos que demonstram minha expertise</p>
+            </div>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="commercial">Comerciais</button>
+                <button class="filter-btn" data-filter="social">Redes Sociais</button>
+                <button class="filter-btn" data-filter="corporate">Corporativo</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="commercial">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                        <div class="video-overlay">
+                            <div class="video-info">
+                                <h4>Projeto Comercial</h4>
+                                <p>Vídeo promocional para marca</p>
+                                <div class="video-stats">
+                                    <span><i class="fas fa-eye"></i> <span class="view-count">Carregando...</span></span>
+                                    <span><i class="fas fa-heart"></i> Alta taxa de engajamento</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="social">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/C0DPdy98e4c" allowfullscreen></iframe>
+                        <div class="video-overlay">
+                            <div class="video-info">
+                                <h4>Conteúdo para Redes Sociais</h4>
+                                <p>Vídeo viral para Instagram</p>
+                                <div class="video-stats">
+                                    <span><i class="fas fa-eye"></i> <span class="view-count">Carregando...</span></span>
+                                    <span><i class="fas fa-share"></i> Muito compartilhado</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="corporate">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/TZl00fqZI1I" allowfullscreen></iframe>
+                        <div class="video-overlay">
+                            <div class="video-info">
+                                <h4>Vídeo Corporativo</h4>
+                                <p>Apresentação institucional</p>
+                                <div class="video-stats">
+                                    <span><i class="fas fa-eye"></i> <span class="view-count">Carregando...</span></span>
+                                    <span><i class="fas fa-building"></i> Uso empresarial</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Vamos Trabalhar Juntos?</h2>
+                <p class="section-subtitle">Entre em contato e vamos dar vida às suas ideias</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Informações de Contato</h3>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p>+55 (18) 99663-8775</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-discord"></i>
+                        <div>
+                            <h4>Discord</h4>
+                            <p>.rafa_apenas</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horário de Atendimento</h4>
+                            <p>Segunda à Sexta: 9h às 18h</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-buttons">
+                    <a href="https://wa.me/5518996638775" target="_blank" class="contact-btn whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>Falar no WhatsApp</span>
+                        <div class="btn-shine"></div>
+                    </a>
+                    <button class="contact-btn discord" onclick="copyDiscord()">
+                        <i class="fab fa-discord"></i>
+                        <span>Copiar Discord</span>
+                        <div class="btn-shine"></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <i class="fas fa-video"></i>
+                    <span>Rafael Editor</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Início</a>
+                    <a href="#about">Sobre</a>
+                    <a href="#portfolio">Portfólio</a>
+                    <a href="#contact">Contato</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://wa.me/5518996638775" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" onclick="copyDiscord()"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Rafael Editor - Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
